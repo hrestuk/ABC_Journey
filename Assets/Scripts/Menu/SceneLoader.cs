@@ -12,13 +12,18 @@ public class SceneLoader : MonoBehaviour
             LoadRegistrationScreen();
         }
     }
-    public void LoadMenu()
-    {
-        SceneManager.LoadScene(0);
-    }
 
     private void LoadRegistrationScreen()
     {
         SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
+    }
+    
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
