@@ -1,9 +1,9 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class LevelLoader : MonoBehaviour
+public class SceneLoader : MonoBehaviour
 {
     private void Awake() 
     {
@@ -21,5 +21,4 @@ public class LevelLoader : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
     }
-
 }
