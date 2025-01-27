@@ -14,8 +14,11 @@ public class SceneLoader : MonoBehaviour
     }
 
     private void LoadRegistrationScreen()
-    {
-        SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
+    {   
+        if (SceneManager.GetActiveScene().buildIndex != SceneManager.sceneCountInBuildSettings - 1)
+        {
+            SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
+        }
     }
     
     public void LoadMenu()

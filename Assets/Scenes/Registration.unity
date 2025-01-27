@@ -1210,6 +1210,7 @@ GameObject:
   - component: {fileID: 984132004}
   - component: {fileID: 984132003}
   - component: {fileID: 984132005}
+  - component: {fileID: 984132006}
   m_Layer: 5
   m_Name: SplashScreen
   m_TagString: Untagged
@@ -1289,6 +1290,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameInputField: {fileID: 8948296421748317812}
   ageInputField: {fileID: 1389721949}
+--- !u!114 &984132006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984132001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30f13717c6fcf864a8e7ab2dc5c063a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1034206291
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1310,16 +1323,44 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 228061810417912907, guid: da0a716b5f08ae140ba252b5abd7c688, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 228061810417912907, guid: da0a716b5f08ae140ba252b5abd7c688, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 228061810417912907, guid: da0a716b5f08ae140ba252b5abd7c688, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1138922926}
+      objectReference: {fileID: 984132006}
+    - target: {fileID: 228061810417912907, guid: da0a716b5f08ae140ba252b5abd7c688, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 984132006}
     - target: {fileID: 228061810417912907, guid: da0a716b5f08ae140ba252b5abd7c688, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
+      value: LoadMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 228061810417912907, guid: da0a716b5f08ae140ba252b5abd7c688, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LoadMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 228061810417912907, guid: da0a716b5f08ae140ba252b5abd7c688, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 228061810417912907, guid: da0a716b5f08ae140ba252b5abd7c688, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SceneLoader, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 228061810417912907, guid: da0a716b5f08ae140ba252b5abd7c688, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 228061810417912907, guid: da0a716b5f08ae140ba252b5abd7c688, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 812669004854443123, guid: da0a716b5f08ae140ba252b5abd7c688, type: 3}
       propertyPath: m_Pivot.x

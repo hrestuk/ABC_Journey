@@ -27,18 +27,6 @@ public class WordManager : MonoBehaviour
                 correctLetters++;
             }
         }
-
-        if (targetWordComponent == null)
-        {
-            Debug.LogError("TargetWord component not found on the object.");
-            return;
-        }
-        Debug.Log("ChekWord" + correctLetters+ "   TARG " + targetWordComponent.targetWord.Length);
-
-        if (targetWordComponent.targetWord.Length == correctLetters)
-        {
-            Debug.Log("Win");
-        }
         
     }
 
