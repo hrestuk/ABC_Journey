@@ -7,6 +7,7 @@ public class SceneLoader : MonoBehaviour
 {
     private void Awake() 
     {
+        PlayerPrefs.DeleteAll();
         if (string.IsNullOrEmpty(PlayerPrefs.GetString("PlayerName")))
         {
             LoadRegistrationScreen();
