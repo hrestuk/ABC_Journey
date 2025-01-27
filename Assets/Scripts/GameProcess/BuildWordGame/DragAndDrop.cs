@@ -5,9 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class DragAndDrop : MonoBehaviour,IDragHandler ,IBeginDragHandler, IEndDragHandler
-{
-    //[SerializeField] Canvas canvas;
-    
+{    
     private RectTransform rectTransform;
     [SerializeField] private RectTransform targetTransform;
     private float snapDistance = 20f;

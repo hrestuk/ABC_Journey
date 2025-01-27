@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: f3444d9c68a20094d8745ed24ba31fbf
   - enabled: 1
-    path: Assets/Scenes/AlphabetLvls/A Level 1.unity
+    path: Assets/Scenes/AlphabetLvls/Alphabet Level 1.unity
     guid: 5298ba91e836bf84bad5153702512c01
   - enabled: 1
-    path: Assets/Scenes/WordFromLetters/WFL Level 1.unity
+    path: Assets/Scenes/Make Word/Make Word Level 1.unity
     guid: 70e2ab8e4feaae8438e235ead22c5dfe
   - enabled: 1
     path: Assets/Scenes/Registration.unity
