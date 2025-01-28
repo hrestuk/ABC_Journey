@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WordManager : MonoBehaviour
 {
-    [SerializeField] TargetWord targetWordComponent;
+    [SerializeField] private Button nextButton;
     [SerializeField] private List<DragAndDrop> letters;
     private void Start() 
     {
+        nextButton.interactable = false;
         foreach (DragAndDrop item in letters)
         {
             item.onSnapCompleted += CheckWord;
@@ -15,8 +17,7 @@ public class WordManager : MonoBehaviour
     }
 
     public void CheckWord()
-    {   
-        
+    {     
         int correctLetters = 0;
         foreach (var item in letters)
         {
@@ -26,8 +27,12 @@ public class WordManager : MonoBehaviour
             {
                 correctLetters++;
             }
+        }   
+
+        if (correctLetters == letters.Count)
+        {
+            nextButton.interactable = true;
         }
-        
     }
 
 

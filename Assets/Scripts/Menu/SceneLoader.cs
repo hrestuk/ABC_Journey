@@ -17,7 +17,7 @@ public class SceneLoader : MonoBehaviour
     {   
         if (SceneManager.GetActiveScene().buildIndex != SceneManager.sceneCountInBuildSettings - 1)
         {
-            SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
+            SceneManager.LoadScene("Registration");
         }
     }
     
@@ -29,4 +29,5 @@ public class SceneLoader : MonoBehaviour
     {
         Application.Quit();
     }
+
 }

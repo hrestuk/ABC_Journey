@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class DragAndDrop : MonoBehaviour,IDragHandler ,IBeginDragHandler, IEndDragHandler
 {    
+    [SerializeField] Canvas canvas;
     private RectTransform rectTransform;
     [SerializeField] private RectTransform targetTransform;
     private float snapDistance = 20f;
@@ -26,7 +27,7 @@ public class DragAndDrop : MonoBehaviour,IDragHandler ,IBeginDragHandler, IEndDr
     {
         if (isSnapped) return;
         
-        rectTransform.anchoredPosition += eventData.delta;
+        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
 
     public void OnEndDrag(PointerEventData eventData)
